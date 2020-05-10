@@ -2,7 +2,9 @@
 " Show line number
 set number
 
-set mouse=a
+if has('mouse')
+	set mouse=a
+endif
 
 " Tab indent
 set tabstop=4
@@ -25,11 +27,10 @@ set t_Co=256
 
 " Display tab and trail space
 set list
-set listchars=tab:>-,trail:.
+set listchars=tab:>-,trail:·
 set guifont=Consolas\ 11
 
 " Others
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gb18030,cp936,big5
-set clipboard=unnamed
