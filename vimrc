@@ -31,6 +31,7 @@ set incsearch
 
 " Map
 inoremap jj <Esc>
+noremap <leader><CR> :nohlsearch<CR>
 " Display
 set showmode
 set t_Co=256
