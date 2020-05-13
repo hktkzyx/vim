@@ -1,7 +1,12 @@
 " hktkzyx <hktkzyx@qq.com>
 " Show line number
-set number
+set nocompatible
+set showmode
 set showcmd
+
+set ruler
+set number
+set syntax=on
 
 if has('mouse')
 	set mouse=a
@@ -16,11 +21,7 @@ set autoindent
 set smartindent
 set cindent
 
-set ruler
-set nocompatible
-
 colorscheme molokai
-set syntax=on
 
 " Search
 set ignorecase
@@ -34,7 +35,6 @@ inoremap jj <Esc>
 noremap <leader><CR> :nohlsearch<CR>
 
 " Display
-set showmode
 set t_Co=256
 if &term =~ '256color'
 	" disable Background Color Erase (BCE) so that color schemes
