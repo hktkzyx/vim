@@ -35,10 +35,6 @@ set hlsearch
 exec "nohlsearch"
 set incsearch
 
-" Map
-inoremap jj <Esc>
-noremap <leader><CR> :nohlsearch<CR>
-
 " Display
 set t_Co=256
 if &term =~ '256color'
@@ -52,6 +48,10 @@ endif
 set list
 set listchars=tab:>-,trail:·
 set guifont=Consolas\ 11
+
+" Map
+inoremap jj <Esc>
+noremap <leader><CR> :nohlsearch<CR>
 
 " Plugin
 call plug#begin('~/.vim/plugged')
