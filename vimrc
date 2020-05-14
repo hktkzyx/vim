@@ -4,6 +4,11 @@ set nocompatible
 set showmode
 set showcmd
 
+" Encoding
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,gb18030,cp936,big5
+
 set ruler
 set number
 set syntax=on
@@ -47,11 +52,6 @@ endif
 set list
 set listchars=tab:>-,trail:·
 set guifont=Consolas\ 11
-
-" Others
-set encoding=utf-8
-set fileencoding=utf-8
-set fileencodings=ucs-bom,utf-8,gb18030,cp936,big5
 
 " Plugin
 call plug#begin('~/.vim/plugged')
