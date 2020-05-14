@@ -10,6 +10,7 @@ set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gb18030,cp936,big5
 
 set ruler
+set relativenumber
 set number
 set syntax=on
 
