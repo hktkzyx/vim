@@ -53,6 +53,10 @@ set guifont=Consolas\ 11
 " Map
 inoremap jj <Esc>
 noremap <leader><CR> :nohlsearch<CR>
+noremap <leader>w :w<CR>
+noremap <leader>q :q<CR>
+noremap <leader>wq :wq<CR>
+noremap <leader>q1 :q!<CR>
 
 " Plugin
 call plug#begin('~/.vim/plugged')
