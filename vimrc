@@ -51,6 +51,7 @@ set listchars=tab:>-,trail:·
 set guifont=Consolas\ 11
 
 " Map
+let mapleader="\<space>"
 inoremap jj <Esc>
 nnoremap <leader><CR> :nohlsearch<CR>
 nnoremap <leader>w :w<CR>
@@ -62,5 +63,8 @@ nnoremap <leader>q1 :q!<CR>
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-surround'
+Plug 'joom/vim-commentary'
+Plug 'michaeljsmith/vim-indent-object'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
